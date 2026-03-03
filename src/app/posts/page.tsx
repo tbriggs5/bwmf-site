@@ -2,7 +2,7 @@ import { getSubstackFeed } from "@/lib/substack";
 import { formatDate } from "@/lib/format";
 import { SubstackSubscribe } from "@/components/substack-subscribe";
 
-export const revalidate = 60 * 30;
+export const revalidate = 1800;
 
 export default async function PostsPage() {
   const posts = await getSubstackFeed(25);
